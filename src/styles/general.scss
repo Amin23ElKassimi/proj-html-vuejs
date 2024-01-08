@@ -1,0 +1,13 @@
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+*{
+    @include reset;
+}
+
+
+header {
+    @include flex(row,center,start)
+}
+

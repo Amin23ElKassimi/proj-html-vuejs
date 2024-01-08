@@ -14,7 +14,8 @@ export default {
 
 
 <!-- SASS Code -->
-<style lang="">
-    
-</style>
+<style lang="scss">
+  @use './styles/general.scss' as *;
+
+  
 </style>

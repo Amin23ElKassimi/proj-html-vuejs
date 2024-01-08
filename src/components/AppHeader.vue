@@ -2,6 +2,7 @@
 <template lang="">
     <header>
         <div class="header-back">
+            <!-- List Links -->
             <nav>
                 <div>
                     <img src="../assets/img/author-logo-round-small.png" alt="">
@@ -12,6 +13,33 @@
                     </li>
                 </ul>
             </nav>
+            <!-- Author Detail -->
+            <div id="author-detail">
+                <div>
+                    <h2>Damon Vaugh</h2>
+                    <p>Best-selling author and the most influential public intellectul in the western world right now.</p>
+                    <span>- The New York Times</span>
+                </div>
+                <!-- Latest Release -->
+                <div>
+                    <div class="square">
+                        Demos
+                    </div>
+                    <div class="square">
+                        $39
+                        on Sale
+                    </div>
+                    <div id="realese-section">
+                        <img src="../assets/img/book-widget.png" alt="">
+                        <div>
+                            <p>Latest Books Release</p>
+                            <div class="danger-color">D.VAUGHN AUTOBIOGRAPHY</div>
+                            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem repellendus autem pariatur odit voluptatum delectus et sunt hic ipsa distinctio architecto minima voluptatibus, laudantium a perspiciatis ipsam placeat quaerat corrupti?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 </template>
@@ -76,15 +104,15 @@ export default {
 }
 </script>
 
-
 <!-- SASS Code -->
-<style lang="scss">
+<style lang="scss" scoped>
   @use '../styles/general.scss' as *;
   @use '../styles/partials/mixins' as *;
+  @use '../styles/partials/variables' as *;
 
     header {
         width: 100vw;
-        height: 800px;
+        color: white;
     }
 
     .header-back{
@@ -93,7 +121,6 @@ export default {
         padding: 0;
         background-size: cover;
         width: 100%;
-        height: 500px;
     }
 
     nav {
@@ -121,6 +148,46 @@ export default {
         
     }
 
+    #author-detail{
+        margin-left: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    div h2 {
+        color: #f4b429;
+    }
+
+    #realese-section{
+        background-color: white;
+        position: relative;
+        width: 600px;
+        left:calc(100% - 600px);
+        display: flex;
+        p{
+            color: black;
+            margin: 2rem;
+        }
+        img{
+            padding: 3rem;
+        }
+    }
+
+    .square{
+            color: gray;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 80px;
+            height: 80px;
+            position: relative;
+            left:calc(100% - 90px);
+            bottom:50px ;
+            margin-bottom: 0.5rem;
+        }
+
+    .danger-color{
+        color: $danger-color;
+    }
   
 </style>

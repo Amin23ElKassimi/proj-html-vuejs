@@ -16,7 +16,20 @@
               <img src="../assets/img/kindlefire-logotan-2x.png" alt="">
             </div>
         </div>
-              <!-- Section 02: Audio Book-->
+        <div id="audio-detail">
+          <div class="photoaudio cardaudio">
+            <img src="../assets/img/audible-app-2x.png" alt="">
+          </div>
+          <div class="cardaudio text-light">
+            <h3>
+              New AudioBook
+            </h3>
+            <p class="">
+              no time to read? no problem. listen to it
+            </p>
+          </div>
+        </div>
+              <!-- Section 02: What The Critics Say-->
         <setion class="critics">
 
         </setion>
@@ -67,7 +80,29 @@ export default {
         width: 200px;
         height: 80px;
     }
-  }
+    }
+
+    #audio-detail{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../assets/img/banner.jpg');
+      height: 670px;
+      img{
+        height:500px ;
+      }
+    }
+
+    .photoaudio{
+      align-self: flex-end;
+    }
+
+    .cardaudio{
+      margin: 0 3rem;
+    }
+
+
+    //  Section 02: What The Critics Say
 
   
 </style>

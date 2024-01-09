@@ -1,7 +1,9 @@
 <!-- HTML & Vue JS-->
 <template lang="">
     <header>
-        <div class="header-back">
+
+        <!-- Section Background Image -->
+        <section class="header-back">
             <!-- List Links -->
             <nav>
                 <div>
@@ -15,9 +17,9 @@
             </nav>
             <!-- Author Detail -->
             <div id="author-detail">
-                <div>
-                    <h2>Damon Vaugh</h2>
-                    <p>Best-selling author and the most influential public intellectul in the western world right now.</p>
+                <div class="pe-5">
+                    <div class="rem3 danger-color">Damon Vaugh</div>
+                    <p class="rem3">Best-selling author and the most influential public intellectul in the western world right now.</p>
                     <span>- The New York Times</span>
                 </div>
                 <!-- Latest Release -->
@@ -30,17 +32,37 @@
                         on Sale
                     </div>
                     <div id="realese-section">
-                        <img src="../assets/img/book-widget.png" alt="">
+                        <!-- Img LAtest Book -->
                         <div>
-                            <p>Latest Books Release</p>
-                            <div class="danger-color">D.VAUGHN AUTOBIOGRAPHY</div>
-                            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem repellendus autem pariatur odit voluptatum delectus et sunt hic ipsa distinctio architecto minima voluptatibus, laudantium a perspiciatis ipsam placeat quaerat corrupti?</div>
+                            <img src="../assets/img/book-widget.png" alt="">
+                            <div>
+                                <p>Latest Books Release</p>
+                                <div class="danger-color">D.VAUGHN AUTOBIOGRAPHY</div>
+                                <div class="color-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem repellendus autem pariatur odit voluptatum delectus et sunt hic ipsa distinctio architecto minima voluptatibus, laudantium a perspiciatis ipsam placeat quaerat corrupti?</div>
+                            </div>
+                        </div>
+                        <!-- Buttons Group -->
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-success">Buy on Amazon</button>
+                                <button type="button" class="btn btn-outline-success">Buy on AppStore</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
+        <!-- Section Author Detail -->
+        <section id="author-section">
+            <div class="text-center mt-5 text-black">
+                <div class="rem3 danger-color mb-3">More About Damon Vaugh</div>
+                <p class="rem2">
+                    Damon Vough is a professor of psychology at the university of Toronto, a clinical psychologist
+                    and the author of the multi-milion copy bestseller "The story of my life."
+                </p>
+                <button type="button" class="btn btn-success mt-4">Meet the Author</button>
+            </div>
+        </section>
+
     </header>
 </template>
 
@@ -99,8 +121,6 @@ export default {
     },
 
 
-
-
 }
 </script>
 
@@ -149,10 +169,11 @@ export default {
     }
 
     #author-detail{
-        margin-left: 10rem;
+        margin-left: 16rem;
         display: flex;
         justify-content: space-between;
     }
+
 
     div h2 {
         color: #f4b429;
@@ -161,8 +182,11 @@ export default {
     #realese-section{
         background-color: white;
         position: relative;
-        width: 600px;
-        left:calc(100% - 600px);
+        width: 650px;
+        left:calc(100% - 650px);
+    }
+
+    #realese-section > div{
         display: flex;
         p{
             color: black;
@@ -171,6 +195,10 @@ export default {
         img{
             padding: 3rem;
         }
+    }
+
+    #author-section{
+        @include my-wrapper;
     }
 
     .square{
@@ -188,6 +216,20 @@ export default {
 
     .danger-color{
         color: $danger-color;
+    }
+
+    .rem4{
+        font-size: 3rem;
+    }
+    .rem3{
+        font-size: 2.5rem;
+    }
+    .rem2{
+        font-size: 2rem;
+    }
+
+    .color-black{
+        color: black;
     }
   
 </style>

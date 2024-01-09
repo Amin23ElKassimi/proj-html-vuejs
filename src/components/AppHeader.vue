@@ -18,8 +18,8 @@
             <!-- Author Detail -->
             <div id="author-detail">
                 <div class="pe-5">
-                    <div class="rem3 danger-color">Damon Vaugh</div>
-                    <p class="rem3">Best-selling author and the most influential public intellectul in the western world right now.</p>
+                    <div class="rem3 danger-color dancing-script">Damon Vaugh</div>
+                    <p class="rem3 salsa">Best-selling author and the most influential public intellectul in the western world right now.</p>
                     <span>- The New York Times</span>
                 </div>
                 <!-- Latest Release -->
@@ -231,5 +231,15 @@ export default {
     .color-black{
         color: black;
     }
+
+    // Fonts Family
+    .salsa{
+        font-family: salsa;
+    }
+
+    .dancing-script{
+        font-family: 'Caveat', cursive;
+        font-family: 'Dancing Script', cursive;
+    } 
   
 </style>

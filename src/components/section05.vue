@@ -5,26 +5,34 @@
     <div class="wrapper">
       <!-- Title -->
       <div class="text-center">
-          <h1 tex>Upcoming Events</h1>
-          <p>meet the author in person</p>
+          <h1 class="text-capitalize">Dig A Litte depper into damon vaughn</h1>
+          <p class="text-success text-uppercase">meet the author in person</p>
       </div>
       <!-- Cards -->
       <div class="wrapper-cards d-flex text-center">
         <!-- Card01 -->
         <div class="card-01 mx-4 text-center">
-          <div>
-            <p>About Me</p> 
+          <div class="d-flex flex-column align-items-center justify-content-end height-100 backdrop-filter">
+            <h4 class="text-light fw-bold">About Me</h4> 
             <hr>
-            <p>Vestiblum ante ipsum primis</p>
+            <p class="danger-color">Vestiblum ante ipsum primis</p>
           </div>
         </div>
         <!-- Card02 -->
         <div class="card-02 mx-4" >
-        
+          <div class="d-flex flex-column align-items-center justify-content-end height-100 backdrop-filter">
+            <h4 class="text-light">My latest Book</h4> 
+            <hr>
+            <p class="danger-color">Vestiblum ante ipsum primis</p>
+          </div>
         </div>
         <!-- Card03 -->
         <div class="card-03 mx-4" >
-       
+          <div class="d-flex flex-column align-items-center justify-content-end height-100 backdrop-filter">
+            <h4 class="text-light">Book Signing</h4> 
+            <hr>
+            <p class="danger-color">Vestiblum ante ipsum primis</p>
+          </div>
         </div>
       </div>
     </div>
@@ -56,12 +64,13 @@ export default {
   .wrapper-cards{
     height: 500px;
     hr{
-      width: 50px;
+      width: 60px;
+      border: solid 2px white;
     }
   }
   .card-01{
     width: calc(100% / 3);
-    background-image: url(../assets/img/box-1.jpg);
+    background-image: url(../assets/img/box-1.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 50px 0;  
@@ -96,12 +105,18 @@ export default {
       color: rgb(150, 147, 147);
     }
 
+    .height-100{
+      height: 100%;
+    }
     
     .beji-bg{
       background-color:$beji-bg;
     }
 
-
-
+    .backdrop-filter{
+      backdrop-filter: brightness(0.7);
+      border-radius: 0 0 50px 0;  
+    }
+    
     
 </style>

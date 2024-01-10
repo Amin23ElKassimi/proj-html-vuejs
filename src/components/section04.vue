@@ -3,8 +3,10 @@
     <div class="newsletter">
       <div class="wrapper">
         <div class="text-center">
-            <h1 class="text-light">subscribe to my 
-              <br>newsletter</h1>
+            <h1 class="text-light">Subscribe To My 
+              <br>
+              Newsletter
+            </h1>
             <p class="danger-color">be notified about book signing tour dates</p>
         </div>
         <div class="d-flex"> 

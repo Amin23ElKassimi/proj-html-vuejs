@@ -10,7 +10,7 @@
                     <img src="../assets/img/author-logo-round-small.png" alt="">
                 </div>
                 <ul class="m-0">
-                    <li v-for="(link, index) in navLinks" >
+                    <li v-for="(link, index) in links" >
                     {{ link.content}}
                     </li>
                 </ul>
@@ -19,7 +19,7 @@
             <div id="author-detail">
                 <div class="pe-5">
                     <div class="rem3 danger-color dancing-script">Damon Vaugh</div>
-                    <p class="rem3 salsa">Best-selling author and the most influential public intellectul in the western world right now.</p>
+                    <p class="rem2 salsa">Best-selling author and the most influential public intellectul in the western world right now.</p>
                     <span>- The New York Times</span>
                 </div>
                 <!-- Latest Release -->
@@ -54,7 +54,7 @@
         <!-- Section Author Detail -->
         <section id="author-section">
             <div class="text-center mt-5 text-black">
-                <div class="rem3 danger-color mb-3">More About Damon Vaugh</div>
+                <div class="rem3 danger-color mb-3 dancing-script">More About Damon Vaugh</div>
                 <p class="rem2">
                     Damon Vough is a professor of psychology at the university of Toronto, a clinical psychologist
                     and the author of the multi-milion copy bestseller "The story of my life."
@@ -70,6 +70,14 @@
 <script>
 
 export default {
+
+        // Props provenienti dal padre
+        props: {
+            links : {
+                type : Array,
+                require: true,
+            }
+        },
 
     name: 'AppHeader',
     // Variabili
@@ -222,7 +230,7 @@ export default {
         font-size: 3rem;
     }
     .rem3{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
     .rem2{
         font-size: 2rem;

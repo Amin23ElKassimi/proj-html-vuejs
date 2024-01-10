@@ -33,38 +33,31 @@
             </div>
             <!-- Contacts -->
             <div class="about-me">
-                <nav id="siteslinks">
-                    <h4>
-                        CONTACT INFO
-                    </h4>
-                    <ul>
-                        <li v-for="(link, index) in shopLinks" >
-                          {{ link.content}}
-                        </li>
-                    </ul>
-                </nav>
+                <h4>
+                    CONTACT INFO
+                </h4>
+                <p>
+                   63 E. Studbaker Street Bolingbrook, IL 60440 
+                </p>
+                <p>
+                    Phone: (800) 000-000
+                </p>
+                <p>
+                    Mobile: (800) 000-000
+                </p>
+                <p>
+                    Email: info@your-comany.com 
+                </p>
             </div>
         </div>
     </div>
     </section>
 
-    <!-- Sign Up Now -->
-    <section class="content">
-    <div id="container">
-        <div class="d-flex justify-content-between align-items-center" role="search">
-            <div id="sign-btn" type="submit">SIGN-UP NOM!</div>
-            <div>
-                <div id="follow-info" type="submit">FOLLOW US </div>
-                <img src="../assets/img/footer-facebook.png" alt="" class="m-2">
-                <img src="../assets/img/footer-twitter.png" alt="" class="m-2">
-                <img src="../assets/img/footer-youtube.png" alt="" class="m-2">
-                <img src="../assets/img/footer-pinterest.png" alt="" class="m-2">
-                <img src="../assets/img/footer-periscope.png" alt="" class="m-2">
-
-            </div>
-        </div>
-    </div>
-    </section>
+    <!-- Copy Right-->
+      <!-- Copy Right -->
+      <div class="text-center text-gray pb-5">
+        Copiright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress 
+      </div>
 
     </footer>
 </template>
@@ -85,6 +78,21 @@ export default {
                 },
                 {
                     content: 'UpComing Events',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'Recent Articles',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'Bussines Enquires',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'Visist My Foundation',
                     url: '#',
                     active: false,
                 },
@@ -166,6 +174,10 @@ export default {
         font-size: 1.5rem;
         display: inline-block;
         margin-right: 1rem;
+    }
+
+    .text-gray{
+      color: rgb(150, 147, 147);
     }
 
 </style>

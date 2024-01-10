@@ -56,7 +56,7 @@ export default {
   
   .wrapper{
     width: 80%;
-    margin: 0 auto;
+    margin: 3rem auto;
     padding: 2rem;
     border-radius: 20px; 
   }

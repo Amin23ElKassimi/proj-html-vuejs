@@ -6,7 +6,7 @@
         <!-- Title -->
         <div class="text-center">
             <h1 tex>Upcoming Events</h1>
-            <p>meet the author in person</p>
+            <p class="danger-color">meet the author in person</p>
         </div>
         <!-- Cards -->
         <div class="d-flex justify-content-center text-center">

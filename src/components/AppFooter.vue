@@ -1,19 +1,171 @@
-<!-- HTML & Vue JS-->
+<!-- HTM & Vue -->
 <template lang="">
-    <div>
-        
+    <footer>
+
+    <!-- Meta  -->
+    <section class="meta">
+    <div id="container">
+        <div>
+            <div>
+                <img src="../assets/img/author-logo-round-200x205.png" alt="">
+            </div>
+            <!-- About ME -->
+            <div class="about-me">
+                <h4>
+                    ABOUT ME
+                </h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cupiditate illum voluptate, earum iste, dolorum saepe ut debitis praesentium porro quia ad a nostrum culpa reprehenderit mollitia velit beatae aut.
+                </p>
+            </div>
+            <!-- links -->
+            <div class="about-me">
+                <nav id="siteslinks">
+                    <h4>
+                        USEFUL LINKS
+                    </h4>
+                    <ul>
+                        <li v-for="(link, index) in shopLinks" >
+                        >   {{ link.content}}
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Contacts -->
+            <div class="about-me">
+                <nav id="siteslinks">
+                    <h4>
+                        CONTACT INFO
+                    </h4>
+                    <ul>
+                        <li v-for="(link, index) in shopLinks" >
+                          {{ link.content}}
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
+    </section>
+
+    <!-- Sign Up Now -->
+    <section class="content">
+    <div id="container">
+        <div class="d-flex justify-content-between align-items-center" role="search">
+            <div id="sign-btn" type="submit">SIGN-UP NOM!</div>
+            <div>
+                <div id="follow-info" type="submit">FOLLOW US </div>
+                <img src="../assets/img/footer-facebook.png" alt="" class="m-2">
+                <img src="../assets/img/footer-twitter.png" alt="" class="m-2">
+                <img src="../assets/img/footer-youtube.png" alt="" class="m-2">
+                <img src="../assets/img/footer-pinterest.png" alt="" class="m-2">
+                <img src="../assets/img/footer-periscope.png" alt="" class="m-2">
+
+            </div>
+        </div>
+    </div>
+    </section>
+
+    </footer>
 </template>
 
-<!-- Script Code -->
+<!-- JAvaScript -->
 <script>
 export default {
+    // NAme Application
+    name: 'AppFoter',
+    // Data
+    data() {
+        return {
+            shopLinks: [
+                {
+                    content: 'Latest Books',
+                    url: '#',
+                    active: false,
+                },
+                {
+                    content: 'UpComing Events',
+                    url: '#',
+                    active: false,
+                },
+            ],
+        }
+    },
     
 }
 </script>
 
+<!-- Sass -->
+<style lang="scss" scoped>
 
-<!-- SASS Code -->
-<style lang="">
-    
+    // Use StyleSheets
+    @use '../styles/partials/variables' as *;
+    @use '../styles/partials/mixins' as *;
+
+    footer{
+        background-color: $main-color;
+        color: white;
+        background: url(../assets/img/footer-3.jpg) no-repeat top center;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        width: 100%;
+    }
+
+    #container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 20px;  
+        top: 50%;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        nav{
+            margin: 0 3rem 0 0 ;
+        }
+    }
+
+    .about-me{
+        width: calc(100% / 4);
+    }
+    .meta{
+        background-image: url(../assets/img/footer-bg.jpg);
+        background-position: center;
+    }
+
+    h2{
+        padding-bottom: 1.5rem;
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        li{
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #sign-btn{
+        border: 2px solid #0282f9;
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+    #follow-info{
+        color: #0282f9;
+        font-weight: bold;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
 </style>

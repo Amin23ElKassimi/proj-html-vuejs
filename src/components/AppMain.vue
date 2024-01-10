@@ -47,20 +47,54 @@
         <setion class="critics">
             <div class="wrapper-sec02" >
               <!-- What the critics Say -->
-              <div>
+              <div class="what-critics">
                 <h1>
                   What The Critics Say
                 </h1>
                 <p class="text-success text-uppercase">
                   tesimonials from around the world
                 </p>
-                <div id="testimonial2">
-
+                <!-- Background img -->
+                <div class="text-light">
+                  <h2>
+                    Best Author Of His Generation
+                  </h2>
+                  <hr>
+                  <p>
+                    This Book Will change your perspective on life
+                  </p>
+                  <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dicta aliquam corporis officia modi libero minima hic iste eveniet tenetur! Accusantium quae quidem velit labore provident reiciendis eveniet dolor maiores.
+                  </div>
+                  <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dicta aliquam corporis officia modi libero minima hic iste eveniet tenetur! Accusantium quae quidem velit labore provident reiciendis eveniet dolor maiores.
+                  </div>
+                  <p class="mt-5">
+                    <img src="../assets/img/nytimes-logo-white-xsmall.png" alt="">
+                    Justine Kilpatrick, 
+                    <span class="fw-bold text-success mt-5">The New York Times</span>
+                  </p>
                 </div>
               </div>
               <!-- Testimonials -->
-              <div >
-
+              <div class="testimonials px-4">
+                <button type="button" class="btn btn-warning text-light fw-bold">Read All Testiomonials</button>
+                <div class="mb-3">
+                  <h3 class="text-capitalize">a ture masterpiece, bravo!</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi earum pariatur ut perferendis non quibusdam maiores ex. Porro veritatis facilis numquam, ut facere pariatur harum, et nisi corrupti quis est.
+                </div>
+                <p class="mb-5">
+                  <img src="../assets/img/theguardian-xsmall.png" alt="">
+                  Gerald Hendley, The Guardian
+                </p>
+                <div class="mb-3">
+                  <h3 class="text-capitalize">a ture masterpiece, bravo!</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi earum pariatur ut perferendis non quibusdam maiores ex. Porro veritatis facilis numquam, ut facere pariatur harum, et nisi corrupti quis est.
+                </div>
+                <p class="mb-5">
+                  <img src="../assets/img/globe-xsmall.png" alt="">
+                  Mary Maxey, The Globe And Mail
+                </p>
               </div>
             </div>
         </setion>
@@ -150,18 +184,35 @@ export default {
       width: 70%;
       margin: 0 auto;
       padding: 2rem;
-    border-radius: 20px; 
-    }
-
-    #testimonial2{
-      background-image: url(../assets/img/testimonial2-2x.jpg);
-      background-repeat: no-repeat;
-      background-size: 500px 100%;
-      height: 485px;
+      border-radius: 20px; 
     }
 
 
 
+    .what-critics{
+      width: 60%;
+    }
+
+    .what-critics > div{
+        background-image: url(../assets/img/testimonial2-2x.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 585px;
+        border-radius: 0 0 100px 0px;
+        width: 100%;
+        padding: 3rem;
+      }
+
+      .testimonials{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        button{
+          align-self: flex-end;
+          width: 200px;
+          margin-bottom: 4rem;
+        }
+      }
 
 
 

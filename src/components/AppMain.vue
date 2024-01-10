@@ -12,9 +12,7 @@
       <!-- Section 05: Dig A Little Deeper Into Damon Vaughn -->
       <section05/>
       <!-- Section 06: Resent Articles-->
-      <setion class="recent-articles">
-
-      </setion>
+      <section06/>
       </main>
 </template>
 
@@ -26,6 +24,7 @@
   import section03 from './section03.vue';
   import section04 from './section04.vue';
   import section05 from './section05.vue';
+  import section06 from './section06.vue';
 
 
   export default {
@@ -38,6 +37,7 @@
       section03,
       section04,
       section05,
+      section06,
     }
 
 

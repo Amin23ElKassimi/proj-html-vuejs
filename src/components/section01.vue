@@ -18,7 +18,7 @@
     </div>
     <!-- Detail -->
     <div id="audio-detail">
-      <div class="wrapper-sec01">
+      <div class="wrapper">
         <!-- Image home -->
         <div class="photoaudio cardaudio">
           <img src="../assets/img/audible-app-2x.png" alt="">
@@ -74,7 +74,7 @@ export default {
 
     }
 
-    .wrapper-sec01{
+    .wrapper{
       display: flex;
       justify-content: center;
       align-items: end;

@@ -1,25 +1,20 @@
 <!-- HTML & Vue JS-->
 <template lang="">
     <main>
-        <!-- Section 01: Audio Book-->
-        <section01/>
-        <!-- Section 02: What The Critics Say-->
-        <section02/>
-        <!-- Section 03: Upcomin Events-->
-        <section03/>
+      <!-- Section 01: Audio Book-->
+      <section01/>
+      <!-- Section 02: What The Critics Say-->
+      <section02/>
+      <!-- Section 03: Upcomin Events-->
+      <section03/>
+      <!-- Section 04: Subscribe To My Newsletter-->
+      <section04/>
+      <!-- Section 05: Dig A Little Deeper Into Damon Vaughn -->
+      <section05/>
+      <!-- Section 06: Resent Articles-->
+      <setion class="recent-articles">
 
-        <!-- Section 04: Subscribe To My Newsletter-->
-
-
-        <!-- Section 05: Dig A Little Deeper Into Damon Vaughn -->
-        <setion class="nav-realese">
-
-        </setion>
-
-        <!-- Section 06: Resent Articles-->
-        <setion class="recent-articles">
-
-        </setion>
+      </setion>
       </main>
 </template>
 
@@ -29,6 +24,9 @@
   import section01 from './section01.vue';
   import section02 from './section02.vue';
   import section03 from './section03.vue';
+  import section04 from './section04.vue';
+  import section05 from './section05.vue';
+
 
   export default {
 
@@ -38,6 +36,8 @@
       section01,
       section02,
       section03,
+      section04,
+      section05,
     }
 
 

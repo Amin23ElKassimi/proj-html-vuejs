@@ -1,7 +1,7 @@
 <!-- HTML & Vue JS-->
 <template lang="">
         <setion class="critics">
-            <div class="wrapper-sec02" >
+            <div class="wrapper" >
               <!-- Title -->
               <div class="d-flex justify-content-between">
                 <div>
@@ -79,7 +79,7 @@ export default {
   @use '../styles/partials/mixins.scss' as *;
 
 
-    .wrapper-sec02{
+    .wrapper{
     width: 70%;
     margin: 0 auto;
     padding: 2rem;
